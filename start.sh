@@ -33,10 +33,4 @@ check_for_file "$install_dir/bin"
 
 cd "$install_dir/bin" || fail 
 
-run_shared=(./dontstarve_dedicated_server_nullrenderer)
-run_shared+=(-console)
-run_shared+=(-cluster "$cluster_name")
-run_shared+=(-monitor_parent_process $$)
-
-"${run_shared[@]}" -shard Caves  | sed 's/^/Caves:  /' &
-"${run_shared[@]}" -shard Master | sed 's/^/Master: /'
+./dontstarve_dedicated_server_nullrenderer -cluster ${cluster_name} -console
