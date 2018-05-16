@@ -2,7 +2,8 @@
 
 steamcmd_dir="$HOME/steamcmd"
 install_dir="$HOME/steamapps/DST"
-cluster_name=${1:-Cluster_1}
+#cluster_name=${1:-Cluster_1}
+cluster_name=${PWD##*/}
 dontstarve_dir="$HOME/.klei/DoNotStarveTogether"
 
 function fail()
