@@ -45,6 +45,7 @@ return {
     configuration_options={ HAT_DECAY=false, RELEASE_BEES=false, SPRING_BEES=true },
     enabled=true 
   },
+  ["workshop-362175979"]={ configuration_options={ ["Draw over FoW"]="disabled" }, enabled=true },
   ["workshop-369083494"]={
     configuration_options={ AutoCrumble=true, Difficulty=0, Edible=true, GrowthSpeed=1 },
     enabled=true 
@@ -70,6 +71,10 @@ return {
       SHOWPLAYERICONS=true,
       SHOWPLAYERSOPTIONS=2 
     },
+    enabled=true 
+  },
+  ["workshop-400409675"]={
+    configuration_options={ Burnables=1, Effectiveness2=0.05, Hauntables=1, Hunger_Cost=-10, Workables=1 },
     enabled=true 
   },
   ["workshop-466732225"]={ configuration_options={  }, enabled=true },
